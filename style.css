@@ -9,13 +9,8 @@ header{
 	z-index: 10; 
 	position: fixed;
 }
-#banner{
-	width: 100%;
-	height: 700px;
-	position: fixed;
-	top: 100px;
-	background: #707070;
-}
+
+
 a:link{
 	text-decoration: none;
 }
@@ -28,16 +23,13 @@ a:link{
 	height: 1500px;
 
 }
-#logo{
-	position:absolute;
-	width: 100%;
-	top: 0%
-}
+
 .left{
 	position:absolute;
 	left: 5%;
 	top: 30%;
 }
+
 .left a{
 	background-color:#dbdbdb;
 	border: 4px;
@@ -49,47 +41,35 @@ a:link{
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.2s;
 }
+
 .left a:hover{
 	background-color: #707070;
 	color: #dbdbdb;
 
 }
-.name{
-	position: absolute;
-	top:6%;
-	right:23%;
-	font-size:120px;
-	font-family: Impact;
-	color:#ff770f;
-	text-shadow: 4px 2px black;
+
+.wrapper{
+	width: 100%
 }
+
 #banner img{
 	height: 100%;
 	width:100%;
+	flex-wrap: wrap;
 }
-.Opencv{
-	position: absolute;
-	left:2%;
-	bottom: 50%;
-	background:#75a3a3;
-	padding:10px;
-	float:left;
-	border-radius: 4px;
-	height: 30%; 
-	width: 96%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
-}
-.Opencv p{
-	position:absolute;
-	left:2%;
-	top:-10%;
-	font-size: 50px;
-	font-family: Impact;
-}
-#content h2{
-	font-size: 80px;
-	font-family: Impact;
-	color: #e67300;
-	text-shadow:4px 2px black;
 
+@media only screen and (min-width: 375px){
+	#banner img{
+		padding-top: 65px;
+	}
 }
+
+@media only screen and (min-width: 1000px){
+	.wrapper{
+		width: 1000px;
+	}
+	#banner img{
+		padding-top: 50px;
+	}
+}
+
